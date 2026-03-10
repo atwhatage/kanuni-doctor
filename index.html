@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global News Portal</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f5f5f5;
+}
+
+/* Header */
+.header{
+background:#d60000;
+color:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+/* Navigation */
+.nav{
+background:#111;
+}
+
+.nav ul{
+margin:0;
+padding:0;
+display:flex;
+list-style:none;
+}
+
+.nav li{
+padding:15px 20px;
+}
+
+.nav a{
+color:white;
+text-decoration:none;
+font-size:16px;
+}
+
+.nav a:hover{
+color:#ffcc00;
+}
+
+/* Breaking News */
+.breaking{
+background:#ffcc00;
+padding:10px 40px;
+font-weight:bold;
+}
+
+/* Main Container */
+.container{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:20px;
+padding:20px 40px;
+}
+
+/* Featured News */
+.featured{
+background:white;
+padding:20px;
+}
+
+.featured img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+/* News Grid */
+.news-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+margin-top:20px;
+}
+
+.news-card{
+background:white;
+padding:10px;
+}
+
+.news-card img{
+width:100%;
+height:150px;
+object-fit:cover;
+}
+
+/* Sidebar */
+.sidebar{
+background:white;
+padding:20px;
+}
+
+.sidebar h3{
+border-bottom:2px solid red;
+padding-bottom:5px;
+}
+
+/* Footer */
+.footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:20px;
+}
+
+@media(max-width:900px){
+.container{
+grid-template-columns:1fr;
+}
+
+.news-grid{
+grid-template-columns:1fr;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="header">
+<div class="logo">Daily News</div>
+<div>March 10, 2026</div>
+</div>
+
+<!-- Navigation -->
+<div class="nav">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Politics</a></li>
+<li><a href="#">Economy</a></li>
+<li><a href="#">Technology</a></li>
+<li><a href="#">Sports</a></li>
+<li><a href="#">World</a></li>
+</ul>
+</div>
+
+<!-- Breaking News -->
+<div class="breaking">
+Breaking: Major political development shaking the country today.
+</div>
+
+<!-- Main Section -->
+<div class="container">
+
+<!-- Left News -->
+<div>
+
+<div class="featured">
+<img src="https://picsum.photos/800/400">
+<h2>Major National Event Happening Today</h2>
+<p>
+A major event has taken place that could affect the national political
+and economic situation. Experts are closely watching the developments.
+</p>
+</div>
+
+<div class="news-grid">
+
+<div class="news-card">
+<img src="https://picsum.photos/400/200">
+<h3>Economy Showing Signs of Recovery</h3>
+<p>Economic indicators show improvement in the national economy.</p>
+</div>
+
+<div class="news-card">
+<img src="https://picsum.photos/401/200">
+<h3>Technology Sector Growing Fast</h3>
+<p>Startups and innovation hubs are expanding rapidly.</p>
+</div>
+
+<div class="news-card">
+<img src="https://picsum.photos/402/200">
+<h3>Sports Team Wins Championship</h3>
+<p>The national team secured a historic victory.</p>
+</div>
+
+<div class="news-card">
+<img src="https://picsum.photos/403/200">
+<h3>Global Leaders Meeting This Week</h3>
+<p>International leaders will meet to discuss global issues.</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- Sidebar -->
+<div class="sidebar">
+
+<h3>Trending News</h3>
+
+<p>• Election results expected soon</p>
+<p>• New economic policy announced</p>
+<p>• Tech companies investing in AI</p>
+<p>• Major sports tournament begins</p>
+<p>• Climate summit updates</p>
+
+</div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+© 2026 Daily News Portal | All Rights Reserved
+</div>
+
+</body>
+</html>
